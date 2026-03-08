@@ -72,13 +72,13 @@ The project adopts a **Git Flow-inspired branching strategy** to manage developm
 
 ## Main Branch
 
-The `master` branch contains the stable and production-ready version of the project.  
+The `main` branch contains the stable and production-ready version of the project.  
 All finalized features and stable updates are merged into this branch.
 
 ---
 
 ## Feature Branches
 
-New features are developed in separate branches created from the `master` branch.
+New features are developed in separate branches created from the `main` branch.
 
 Feature branch naming convention:
