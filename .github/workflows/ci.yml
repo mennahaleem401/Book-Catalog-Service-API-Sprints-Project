@@ -1,0 +1,5 @@
+# Continuous Integration Workflow
+# This workflow runs automatically on pull requests.
+# It helps maintain code quality by defining quality gates,
+# such as running linting checks and unit tests before code
+# can be merged into the main branch.
