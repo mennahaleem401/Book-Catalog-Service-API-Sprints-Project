@@ -1,5 +1,24 @@
-# Continuous Integration Workflow
-# This workflow runs automatically on pull requests.
-# It helps maintain code quality by defining quality gates,
-# such as running linting checks and unit tests before code
-# can be merged into the main branch.
+name: CI Pipeline
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.10
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Tests
+        run: pytest
